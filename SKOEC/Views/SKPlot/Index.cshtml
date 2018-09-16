@@ -1,0 +1,151 @@
+﻿@model IEnumerable<SKOEC.Models.PlotViewModel>
+@using Microsoft.AspNetCore.Http
+
+@{
+    if (Context.Session.GetString("cropId") != null)
+    {
+        ViewData["Title"] = $"All Plots Containing Crop \"{Context.Session.GetString("name")}\" ";
+    }
+    else if (Context.Session.GetString("varietyId") != null)
+    {
+        ViewData["Title"] = $"All Plots Containing Variety \"{Context.Session.GetString("name")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"All Plots";
+    }
+}
+
+<style>
+    .capitalize {
+        text-transform: capitalize;
+    }
+</style>
+
+<h2 class="capitalize">@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+
+    @{
+        if(Context.Session.GetString("cropId") != null)
+        {
+            <span>       |         </span>
+            <a asp-controller="SKCrop" asp-action="Index">Return to Crops</a>
+        }
+        if(Context.Session.GetString("varietyId") != null)
+        {
+            <span>       |         </span>
+            <a asp-controller="SKVariety" asp-action="Index">Return to Varieties</a>
+        }
+    }
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @{
+                    if (Context.Session.GetString("plotId") == null)
+                    {
+                        <a asp-controller="SKPlot" asp-action="Index" asp-route-filter="Farm">
+                            @Html.DisplayNameFor(model => model.Farm)
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        @Html.DisplayNameFor(model => model.Farm)
+                    }
+                }
+            </th>  
+            <th>
+                @Html.DisplayNameFor(model => model.Crop)
+            </th>
+            <th>
+                @{
+                    if (Context.Session.GetString("plotId") == null)
+                    {
+                        <a asp-controller="SKPlot" asp-action="Index" asp-route-filter="Variety">
+                            @Html.DisplayNameFor(model => model.Variety)
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        @Html.DisplayNameFor(model => model.Variety)
+                    }
+                }               
+            </th>
+            <th>
+                @{
+                    if (Context.Session.GetString("plotId") == null)
+                    {
+                        <a asp-controller="SKPlot" asp-action="Index" asp-route-filter="DatePlanted">
+                            @Html.DisplayNameFor(model => model.DatePlanted)
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        @Html.DisplayNameFor(model => model.DatePlanted)
+                    }
+                }
+            </th>
+            <th>
+                @{
+                    if (Context.Session.GetString("plotId") == null)
+                    {
+                        <a asp-controller="SKPlot" asp-action="Index" asp-route-filter="Cec">
+                            @Html.DisplayNameFor(model => model.Cec)
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        @Html.DisplayNameFor(model => model.Cec)
+                    }
+                }         
+            </th>
+            <th>             
+                @Html.DisplayNameFor(model => model.Treatment)
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+               @Html.DisplayFor(modelItem => item.Farm)
+            </td>
+            <td class="capitalize">
+                @Html.DisplayFor(modelItem => item.Crop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Variety)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatePlanted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cec)
+            </td>
+            <td>
+                @foreach(var treatment in item.Treatment)
+                {
+                    <span>@treatment.Name</span><br />
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PlotId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PlotId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PlotId">Delete</a>
+            </td>
+            <td>
+                <a asp-controller="SKTreatment" asp-action="Index" asp-route-farmName ="@item.Farm" asp-route-plotId="@item.PlotId">Manage Treatments</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

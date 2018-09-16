@@ -1,0 +1,9 @@
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\bin\Debug\netcoreapp2.0\SKClassLibrary.deps.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\bin\Debug\netcoreapp2.0\SKClassLibrary.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\bin\Debug\netcoreapp2.0\SKClassLibrary.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\obj\Debug\netcoreapp2.0\SKClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\obj\Debug\netcoreapp2.0\SKClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\obj\Debug\netcoreapp2.0\SKClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\obj\Debug\netcoreapp2.0\SKClassLibrary.AssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\obj\Debug\netcoreapp2.0\SKClassLibrary.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKClassLibrary\obj\Debug\netcoreapp2.0\SKClassLibrary.pdb

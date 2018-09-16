@@ -1,0 +1,166 @@
+﻿@model SKOEC.Models.Plot
+@using Microsoft.AspNetCore.Http
+
+@{
+    if (Context.Session.GetString("cropId") != null)
+    {
+        ViewData["Title"] = $"Delete Plot Containing Crop \"{Context.Session.GetString("name")}\" ";
+    }
+    else if (Context.Session.GetString("varietyId") != null)
+    {
+        ViewData["Title"] = $"Delete Plot Containing Variety \"{Context.Session.GetString("name")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"Delete Plot";
+    }
+}
+
+<style>
+    .capitalize {
+        text-transform: capitalize;
+    }
+</style>
+
+<h2 class="capitalize">@ViewData["Title"]</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Plot</h4>
+    <hr />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DatePlanted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DatePlanted)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateHarvested)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateHarvested)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantingRate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlantingRate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantingRateByPounds)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlantingRateByPounds)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RowWidth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RowWidth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PatternRepeats)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PatternRepeats)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrganicMatter)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrganicMatter)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BicarbP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BicarbP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Potassium)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Potassium)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Magnesium)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Magnesium)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Calcium)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Calcium)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PHsoil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PHsoil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PHbuffer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PHbuffer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cec)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cec)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentBaseSaturationK)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PercentBaseSaturationK)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentBaseSaturationMg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PercentBaseSaturationMg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentBaseSaturationCa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PercentBaseSaturationCa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentBaseSaturationH)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PercentBaseSaturationH)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Farm)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Farm.ProvinceCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Variety)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Variety.VarietyId)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="PlotId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

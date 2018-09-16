@@ -1,0 +1,34 @@
+﻿@model SKOEC.Models.Variety
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = $"Delete Variety of {Context.Session.GetString("name")}";
+}
+
+<style>
+    .capitalize {
+        text-transform: capitalize;
+    }
+</style>
+
+<h2 class="capitalize">@ViewData["Title"]</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Variety</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <input type="hidden" asp-for="VarietyId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

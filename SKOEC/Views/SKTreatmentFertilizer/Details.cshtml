@@ -1,0 +1,44 @@
+﻿@model SKOEC.Models.TreatmentFertilizer
+@using Microsoft.AspNetCore.Http
+
+@{
+    if (Context.Session.GetString("farmName") != null)
+    {
+        ViewData["Title"] = $"Details of Fertilizer for Treatments at Plot #{Context.Session.GetString("plotId")} at \"{Context.Session.GetString("farmName")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"Details of Fertilizer for Selected Treatment";
+    }
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>TreatmentFertilizer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Fertilizer Name
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FertilizerNameNavigation.FertilizerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RatePerAcre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RatePerAcre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RateMetric)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RateMetric)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TreatmentFertilizerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

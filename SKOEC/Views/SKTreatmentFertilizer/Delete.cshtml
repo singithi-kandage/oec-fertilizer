@@ -1,0 +1,47 @@
+﻿@model SKOEC.Models.TreatmentFertilizer
+@using Microsoft.AspNetCore.Http
+
+@{
+    if (Context.Session.GetString("farmName") != null)
+    {
+        ViewData["Title"] = $"Delete Fertilizer for Treatments at Plot #{Context.Session.GetString("plotId")} at \"{Context.Session.GetString("farmName")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"Delete Fertilizer for Selected Treatment";
+    }
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TreatmentFertilizer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Fertilizer Name
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FertilizerNameNavigation.FertilizerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RatePerAcre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RatePerAcre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RateMetric)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RateMetric)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="TreatmentFertilizerId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

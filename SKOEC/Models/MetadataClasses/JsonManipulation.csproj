@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>David Turton</Authors>
+    <Company>Conestoga College</Company>
+    <Description>This contains code to discover the path to a site's appsetting.json file and extract a database's connection string.  This is used to instantiate a context when dependency injection is not implemented.</Description>
+    <Copyright>David Turton 2017</Copyright>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+  </PropertyGroup>
+
+</Project>

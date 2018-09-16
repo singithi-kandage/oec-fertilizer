@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SKOEC.Models.TreatmentFertilizer>
+@using Microsoft.AspNetCore.Http
+
+@{
+    if (Context.Session.GetString("farmName") != null)
+    {
+        ViewData["Title"] = $"All Fertilizers for Treatments at Plot #{Context.Session.GetString("plotId")} at \"{Context.Session.GetString("farmName")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"All Fertilizers for Selected Treatment";
+    }
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Fertilizer Name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RatePerAcre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RateMetric)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FertilizerNameNavigation.FertilizerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RatePerAcre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RateMetric)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TreatmentFertilizerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TreatmentFertilizerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TreatmentFertilizerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<p>
+    <a asp-controller="SKTreatment" asp-action="Index">Return to Treatment Listing</a>
+</p>

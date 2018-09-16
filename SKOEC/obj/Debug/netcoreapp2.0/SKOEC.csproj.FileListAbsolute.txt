@@ -1,0 +1,74 @@
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.deps.json
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.json
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.dev.json
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csprojResolveAssemblyReference.cache
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csproj.CoreCompileInputs.cache
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfoInputs.cache
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfo.cs
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Desktop\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.deps.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.dev.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csprojResolveAssemblyReference.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csproj.CoreCompileInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfoInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.deps.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.dev.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csprojResolveAssemblyReference.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csproj.CoreCompileInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfoInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.deps.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.dev.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csprojResolveAssemblyReference.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csproj.CoreCompileInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfoInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 2\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.deps.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.dev.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csprojResolveAssemblyReference.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csproj.CoreCompileInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfoInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 2\Version 3\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.deps.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.runtimeconfig.dev.json
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csprojResolveAssemblyReference.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.csproj.CoreCompileInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfoInputs.cache
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.AssemblyInfo.cs
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\obj\Debug\netcoreapp2.0\SKOEC.pdb
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKClassLibrary.dll
+C:\Users\Singithi Kandage\Documents\My Courses\LEVEL 3\PROG2230\Assignments\Assignment 4\SKOEC\SKOEC\bin\Debug\netcoreapp2.0\SKClassLibrary.pdb

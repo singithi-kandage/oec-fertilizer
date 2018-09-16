@@ -1,0 +1,155 @@
+﻿@model SKOEC.Models.Plot
+
+@using Microsoft.AspNetCore.Http
+@{
+    if (Context.Session.GetString("cropId") != null)
+    {
+        ViewData["Title"] = $"Edit Plot Containing Crop\"{Context.Session.GetString("name")}\" ";
+    }
+    else if (Context.Session.GetString("varietyId") != null)
+    {
+        ViewData["Title"] = $"Edit Plot Containing Variety \"{Context.Session.GetString("name")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"Edit Plot";
+    }
+
+}
+
+<style>
+    .capitalize {
+        text-transform: capitalize;
+    }
+</style>
+
+<h2 class="capitalize">@ViewData["Title"]</h2>
+
+<h4>Plot</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" asp-for="PlotId" />
+            <div class="form-group">
+                <label asp-for="FarmId" class="control-label"></label>
+                <select asp-for="FarmId" class="form-control" asp-items="ViewBag.FarmId"></select>
+                <span asp-validation-for="FarmId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VarietyId" class="control-label"></label>
+                <select asp-for="VarietyId" class="form-control" asp-items="ViewBag.VarietyId"></select>
+                <span asp-validation-for="VarietyId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatePlanted" class="control-label"></label>
+                <input asp-for="DatePlanted" class="form-control" />
+                <span asp-validation-for="DatePlanted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateHarvested" class="control-label"></label>
+                <input asp-for="DateHarvested" class="form-control" />
+                <span asp-validation-for="DateHarvested" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PlantingRate" class="control-label"></label>
+                <input asp-for="PlantingRate" class="form-control" />
+                <span asp-validation-for="PlantingRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="PlantingRateByPounds" /> @Html.DisplayNameFor(model => model.PlantingRateByPounds)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="RowWidth" class="control-label"></label>
+                <input asp-for="RowWidth" class="form-control" />
+                <span asp-validation-for="RowWidth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PatternRepeats" class="control-label"></label>
+                <input asp-for="PatternRepeats" class="form-control" />
+                <span asp-validation-for="PatternRepeats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrganicMatter" class="control-label"></label>
+                <input asp-for="OrganicMatter" class="form-control" />
+                <span asp-validation-for="OrganicMatter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BicarbP" class="control-label"></label>
+                <input asp-for="BicarbP" class="form-control" />
+                <span asp-validation-for="BicarbP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Potassium" class="control-label"></label>
+                <input asp-for="Potassium" class="form-control" />
+                <span asp-validation-for="Potassium" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Magnesium" class="control-label"></label>
+                <input asp-for="Magnesium" class="form-control" />
+                <span asp-validation-for="Magnesium" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calcium" class="control-label"></label>
+                <input asp-for="Calcium" class="form-control" />
+                <span asp-validation-for="Calcium" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHsoil" class="control-label"></label>
+                <input asp-for="PHsoil" class="form-control" />
+                <span asp-validation-for="PHsoil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHbuffer" class="control-label"></label>
+                <input asp-for="PHbuffer" class="form-control" />
+                <span asp-validation-for="PHbuffer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cec" class="control-label"></label>
+                <input asp-for="Cec" class="form-control" />
+                <span asp-validation-for="Cec" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PercentBaseSaturationK" class="control-label"></label>
+                <input asp-for="PercentBaseSaturationK" class="form-control" />
+                <span asp-validation-for="PercentBaseSaturationK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PercentBaseSaturationMg" class="control-label"></label>
+                <input asp-for="PercentBaseSaturationMg" class="form-control" />
+                <span asp-validation-for="PercentBaseSaturationMg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PercentBaseSaturationCa" class="control-label"></label>
+                <input asp-for="PercentBaseSaturationCa" class="form-control" />
+                <span asp-validation-for="PercentBaseSaturationCa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PercentBaseSaturationH" class="control-label"></label>
+                <input asp-for="PercentBaseSaturationH" class="form-control" />
+                <span asp-validation-for="PercentBaseSaturationH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <input asp-for="Comments" class="form-control" />
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

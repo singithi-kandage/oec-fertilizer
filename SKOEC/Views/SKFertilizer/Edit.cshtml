@@ -1,0 +1,50 @@
+﻿@model SKOEC.Models.Fertilizer
+
+@{
+    ViewData["Title"] = "Edit Fertilizer";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Fertilizer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FertilizerName" />
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="FertilizerName" disabled /> @Html.DisplayNameFor(model => model.FertilizerName)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Oecproduct" /> @Html.DisplayNameFor(model => model.Oecproduct)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Liquid" /> @Html.DisplayNameFor(model => model.Liquid)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

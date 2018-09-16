@@ -1,0 +1,61 @@
+﻿@model IEnumerable<SKOEC.Models.Crop>
+
+@{
+    ViewData["Title"] = "List of All Crops";
+}
+
+<style>
+    .capitalize {
+        text-transform: capitalize;
+    }
+</style>
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Index" 
+                   asp-controller="SKVariety" 
+                   asp-route-name="@item.Name" 
+                   asp-route-cropId="@item.CropId" class="capitalize"> 
+                    @Html.DisplayFor(modelItem => item.Name)
+                </a>  
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-cropName="@item.Name" asp-route-id="@item.CropId">Edit</a> |
+                <a asp-action="Details" asp-route-cropName="@item.Name" asp-route-id="@item.CropId">Details</a> |
+                <a asp-action="Delete" asp-route-cropName="@item.Name" asp-route-id="@item.CropId">Delete</a> 
+            </td>
+            <td>
+                <a asp-action="Index" 
+                   asp-controller="SKPlot" 
+                   asp-route-cropName="@item.Name" 
+                   asp-route-cropId="@item.CropId" 
+                   asp-route-filter="DatePlanted">
+                    Show Plots
+                </a>  
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

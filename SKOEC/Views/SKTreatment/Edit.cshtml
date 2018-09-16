@@ -1,0 +1,60 @@
+﻿@model SKOEC.Models.Treatment
+
+@using Microsoft.AspNetCore.Http
+@{
+    if (Context.Session.GetString("farmName") != null)
+    {
+        ViewData["Title"] = $"Edit Treatment for Plot at \"{Context.Session.GetString("farmName")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"Edit Treatment";
+    }
+}
+<h2>@ViewData["Title"]</h2>
+
+<h4>Treatment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TreatmentId" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="PlotId" class="form-control" value="@Context.Session.GetString("plotId")" />
+                <span asp-validation-for="PlotId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Moisture" class="control-label"></label>
+                <input asp-for="Moisture" class="form-control" />
+                <span asp-validation-for="Moisture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Yield" class="control-label"></label>
+                <input asp-for="Yield" class="form-control" />
+                <span asp-validation-for="Yield" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-treatmentId="@Model.TreatmentId">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

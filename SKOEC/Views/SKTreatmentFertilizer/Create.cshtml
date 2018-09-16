@@ -1,0 +1,83 @@
+﻿@model SKOEC.Models.TreatmentFertilizer
+@using Microsoft.AspNetCore.Http
+
+@{
+    if (Context.Session.GetString("farmName") != null)
+    {
+        ViewData["Title"] = $"Create Fertilizer for Treatments at Plot #{Context.Session.GetString("plotId")} at \"{Context.Session.GetString("farmName")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"Create Fertilizer for Selected Treatment";
+    }
+}
+
+<script>
+
+    window.onload = function () {
+        document.getElementById("RateMetricValue").style.display = "none";
+    }
+
+    function SetRateMetric() {
+        var selected = document.getElementById("RateMetricValue");
+        var rateMetric;
+
+
+        document.getElementById("RateMetricValue").value = document.getElementById("FertilizerName").value;
+
+        if (selected.options[selected.selectedIndex].text == "True")
+        {
+            document.getElementById("RateMetric").value = "Gal";
+        }
+        else
+        {
+            document.getElementById("RateMetric").value = "LB";
+        }
+    }
+
+</script>
+
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>TreatmentFertilizer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="hidden" asp-for="TreatmentId" class="form-control" value="@Convert.ToInt32(Context.Session.GetString("treatmentId"))" />
+            </div>
+            <div class="form-group">
+                <label asp-for="FertilizerName" class="control-label"></label>
+                <select asp-for="FertilizerName" class="form-control" asp-items="ViewBag.FertilizerName" id="FertilizerName" onchange="SetRateMetric()"></select>
+                <span asp-validation-for="FertilizerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RatePerAcre" class="control-label"></label>
+                <input asp-for="RatePerAcre" class="form-control" />
+                <span asp-validation-for="RatePerAcre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select display="none" class="form-control" asp-items="ViewBag.RateMetric" id="RateMetricValue"></select>
+            </div>
+            <div>
+                <label asp-for="RateMetric" class="control-label"></label>
+                <input asp-for="RateMetric"  class="form-control" id="RateMetric"/>
+                 <span asp-validation-for="RateMetric" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

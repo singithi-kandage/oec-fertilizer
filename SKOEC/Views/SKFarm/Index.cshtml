@@ -1,0 +1,73 @@
+﻿@model IEnumerable<SKOEC.Models.Farm>
+
+@{
+    ViewData["Title"] = "Farm Listing";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th style="width:5em;">
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Town)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.County)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomePhone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastContactDate)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProvinceCode)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Town)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.County)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HomePhone)
+            </td>
+            <td>
+                <a href="mailto:dturton@conestogac.on.ca?Subject=Contact">
+                   @Html.DisplayFor(modelItem => item.Email)
+                </a>        
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastContactDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProvinceCodeNavigation.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FarmId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FarmId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FarmId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

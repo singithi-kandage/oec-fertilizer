@@ -1,0 +1,33 @@
+﻿@model SKOEC.Models.Variety
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = $"Details of {Context.Session.GetString("name")} Variety";
+
+}
+
+<style>
+    .capitalize {
+        text-transform: capitalize;
+    }
+</style>
+
+<h2 class="capitalize"> @ViewData["Title"] </h2>
+
+<div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <h4>Variety</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.VarietyId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

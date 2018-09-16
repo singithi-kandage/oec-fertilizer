@@ -1,0 +1,67 @@
+﻿@model IEnumerable<SKOEC.Models.Treatment>
+@using Microsoft.AspNetCore.Http
+
+@{
+    if (Context.Session.GetString("farmName") != null)
+    {
+        ViewData["Title"] = $"Treatments for Plot at \"{Context.Session.GetString("farmName")}\" ";
+    }
+    else
+    {
+        ViewData["Title"] = $"All Treatments";
+    }
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Moisture)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Yield)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Weight)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <td>
+                <a asp-controller="SKTreatmentFertilizer" asp-action="Index" asp-route-treatmentId ="@item.TreatmentId">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </a>           
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Moisture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yield)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TreatmentId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TreatmentId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TreatmentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<p>
+    <a asp-controller="SKPlot" asp-action="Index" asp-route-plotId="@Context.Session.GetString("plotId")">Return to Plot Listing</a>
+</p>
